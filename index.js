@@ -38,7 +38,16 @@ const content = {
       oilNote: "Tady je olej hlavní surovinou. Začni s menším množstvím česneku a olejem nešetři."
     },
     {
-      id: "caprese", title: "Caprese", subtitle: "Rajčata, mozzarella a bazalka", serves: "2–3 porce", image: null,
+      id: "caprese", title: "Caprese", subtitle: "Rajčata, mozzarella a bazalka", serves: "2–3 porce",
+      image: {
+        src: "assets/recipes/caprese-2491985875.jpg",
+        alt: "Salát Caprese z rajčat, mozzarelly a bazalky.",
+        title: "Insalata Caprese — WordRidden / Flickr (CC BY 2.0)",
+        credit: "Insalata Caprese — WordRidden",
+        authorUrl: "https://www.flickr.com/photos/wordridden/",
+        photoUrl: "https://www.flickr.com/photos/wordridden/2491985875/",
+        licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+      },
       description: "Pár dobrých surovin, které spolu fungují nejlíp, když mají pokojovou teplotu.",
       ingredients: ["3 zralá rajčata", "250 g mozzarelly, ideálně buvolí", "Hrst čerstvé bazalky", "2–3 lžíce extra panenského olivového oleje", "Sůl a čerstvě mletý pepř"],
       steps: ["Rajčata a mozzarellu nakrájej na plátky.", "Střídej je na talíři s lístky bazalky.", "Osol, opepři a těsně před podáváním přelij olejem.", "Přines na stůl i chleba — dobře se jím vytírá šťáva s olejem."],
