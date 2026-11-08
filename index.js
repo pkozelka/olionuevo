@@ -59,7 +59,15 @@ const content = {
       oilNote: "Trochu oleje použij při vaření, ale nejvíc chuti dodá závěrečné zakápnutí na talíři."
     },
     {
-      id: "ribollita", title: "Ribollita", subtitle: "Toskánská fazolová polévka", serves: "4 porce", image: null,
+      id: "ribollita", title: "Ribollita", subtitle: "Toskánská fazolová polévka", serves: "4 porce",
+      image: {
+        src: "assets/recipes/ribollita-15149543769.jpg",
+        alt: "Miska ribollity s fazolemi, rajčaty, zeleninou a chlebem.",
+        title: "Making ribollita — Joy / Flickr (CC BY 2.0)",
+        credit: "Making ribollita — Joy",
+        photoUrl: "https://www.flickr.com/photos/joyosity/15149543769/",
+        licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+      },
       description: "Hustá polévka z fazolí, zeleniny a chleba. Druhý den bývá ještě lepší.",
       ingredients: ["400 g vařených bílých fazolí", "1 cibule, 1 mrkev a 2 řapíky celeru", "300 g kapusty nebo kadeřávku", "400 g krájených rajčat", "700 ml zeleninového vývaru nebo vody", "200 g den starého chleba", "3 lžíce olivového oleje a další na dokončení", "Sůl a pepř"],
       steps: ["Cibuli, mrkev a celer nakrájej nadrobno. V hrnci je na oleji pomalu opékej asi 8 minut.", "Přidej kapustu, rajčata a vývar. Osol, opepři a vař asi 20 minut.", "Vmíchej fazole; třetinu můžeš rozmačkat, aby polévku zahustily. Vař dalších 10 minut.", "Přidej natrhaný chléb, krátce povař a nech odpočinout. Na talíři přidej syrový olej."],
