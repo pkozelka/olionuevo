@@ -28,6 +28,7 @@ const content = {
         alt: "Plátky toskánského chleba s česnekem a čerstvým olivovým olejem.",
         title: "Fettunta with new olive oil extra virgin — Gabriele Cantini / Flickr (CC BY 2.0)",
         credit: "Fettunta with new olive oil extra virgin — Gabriele Cantini",
+        authorUrl: "https://www.flickr.com/photos/letorri/",
         photoUrl: "https://www.flickr.com/photos/letorri/5216927761/",
         licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
       },
@@ -50,6 +51,7 @@ const content = {
         alt: "Pappa al pomodoro, hustá toskánská rajčatová polévka s chlebem.",
         title: "pappa al pomodoro — fugzu / Flickr (CC BY 2.0)",
         credit: "pappa al pomodoro — fugzu",
+        authorUrl: "https://www.flickr.com/photos/70253321@N00/",
         photoUrl: "https://www.flickr.com/photos/70253321@N00/2830796123/",
         licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
       },
@@ -65,6 +67,7 @@ const content = {
         alt: "Miska ribollity s fazolemi, rajčaty, zeleninou a chlebem.",
         title: "Making ribollita — Joy / Flickr (CC BY 2.0)",
         credit: "Making ribollita — Joy",
+        authorUrl: "https://www.flickr.com/photos/joyosity/",
         photoUrl: "https://www.flickr.com/photos/joyosity/15149543769/",
         licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
       },
@@ -74,7 +77,16 @@ const content = {
       oilNote: "Závěrečná dávka syrového oleje zvýrazní zeleninu i fazole. Polévka má být opravdu hustá."
     },
     {
-      id: "panzanella", title: "Panzanella", subtitle: "Salát z chleba a rajčat", serves: "4 porce", image: null,
+      id: "panzanella", title: "Panzanella", subtitle: "Salát z chleba a rajčat", serves: "4 porce",
+      image: {
+        src: "assets/recipes/panzanella-4783195124.jpg",
+        alt: "Barevný toskánský salát z rajčat, paprik, cibule a chleba.",
+        title: "Proper Panzanella Salad, Jamies Italian, Leeds — thefoodplace.co.uk / Flickr (CC BY 2.0)",
+        credit: "Proper Panzanella Salad — thefoodplace.co.uk",
+        authorUrl: "https://www.thefoodplace.co.uk/",
+        photoUrl: "https://www.flickr.com/photos/thefoodplace/4783195124/",
+        licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+      },
       description: "Letní salát, ve kterém chléb nasaje rajčatovou šťávu, olej a trochu vinného octa.",
       ingredients: ["300 g den starého venkovského chleba", "500 g zralých rajčat", "1 menší červená cibule", "1 okurka", "Hrst bazalky", "4 lžíce extra panenského olivového oleje", "1–2 lžíce vinného octa, sůl a pepř"],
       steps: ["Chléb natrhej na sousta. Je-li ještě měkký, krátce ho opeč.", "Cibuli nakrájej na tenké plátky, rajčata a okurku na větší kousky.", "V míse promíchej chléb, zeleninu, bazalku, olej a lžíci octa. Osol a opepři.", "Nech 15–20 minut odležet. Ochutnej a případně přidej trochu octa nebo oleje."],
@@ -131,7 +143,7 @@ if (recipeIndex && recipeList) {
   `).join("");
   recipeList.innerHTML = content.recipes.map((recipe, index) => `
     <article class="recipe-card${recipe.image ? " has-image" : ""}" id="${recipe.id}">
-      ${recipe.image ? `<figure class="recipe-photo"><img src="${recipe.image.src}" alt="${recipe.image.alt}" title="${recipe.image.title}" loading="lazy"><figcaption><a href="${recipe.image.photoUrl}" target="_blank" rel="noopener noreferrer">${recipe.image.credit}</a> · <a href="${recipe.image.licenseUrl}" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></figcaption></figure>` : ""}
+      ${recipe.image ? `<figure class="recipe-photo"><img src="${recipe.image.src}" alt="${recipe.image.alt}" title="${recipe.image.title}" loading="lazy"><figcaption><a href="${recipe.image.authorUrl}" target="_blank" rel="noopener noreferrer">${recipe.image.credit}</a> · <a href="${recipe.image.photoUrl}" target="_blank" rel="noopener noreferrer">Flickr photo</a> · <a href="${recipe.image.licenseUrl}" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></figcaption></figure>` : ""}
       <div class="recipe-copy">
         <p class="recipe-number">${String(index + 1).padStart(2, "0")} · ${recipe.serves}</p>
         <h3>${recipe.title}</h3>
