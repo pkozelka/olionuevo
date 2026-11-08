@@ -22,7 +22,15 @@ const content = {
   recipesIntro: "Pár jednoduchých italských jídel, u kterých je dobrý olej opravdu znát. U salátů a chleba ho přidáváme až na konec; do teplých jídel trochu při vaření a ještě trochu na talíř.",
   recipes: [
     {
-      id: "fettunta", title: "Fettunta", subtitle: "Toskánský chléb s olejem", serves: "4 krajíce", image: null,
+      id: "fettunta", title: "Fettunta", subtitle: "Toskánský chléb s olejem", serves: "4 krajíce",
+      image: {
+        src: "https://live.staticflickr.com/5207/5216927761_0ea4beb1fb_b.jpg",
+        alt: "Plátky toskánského chleba s česnekem a čerstvým olivovým olejem.",
+        title: "Fettunta with new olive oil extra virgin — Gabriele Cantini / Flickr (CC BY 2.0)",
+        credit: "Fettunta with new olive oil extra virgin — Gabriele Cantini",
+        photoUrl: "https://www.flickr.com/photos/letorri/5216927761/",
+        licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+      },
       description: "Teplý opečený chléb, česnek, sůl a čerstvý olivový olej. Jednoduchá svačina, na které je olej nejvíc znát.",
       ingredients: ["4 silnější krajíce venkovského chleba", "1 stroužek česneku", "Extra panenský olivový olej", "Hrubší sůl"],
       steps: ["Chléb opeč nasucho na grilu nebo pánvi, aby byl na povrchu křupavý a uvnitř stále měkký.", "Ještě teplé krajíce zlehka potřete rozkrojeným stroužkem česneku.", "Bohatě zakápni olejem, osol a jez hned."],
@@ -107,7 +115,7 @@ if (recipeIndex && recipeList) {
   `).join("");
   recipeList.innerHTML = content.recipes.map((recipe, index) => `
     <article class="recipe-card${recipe.image ? " has-image" : ""}" id="${recipe.id}">
-      ${recipe.image ? `<figure class="recipe-photo"><img src="${recipe.image.src}" alt="${recipe.image.alt}" loading="lazy"></figure>` : ""}
+      ${recipe.image ? `<figure class="recipe-photo"><img src="${recipe.image.src}" alt="${recipe.image.alt}" title="${recipe.image.title}" loading="lazy"><figcaption><a href="${recipe.image.photoUrl}" target="_blank" rel="noopener noreferrer">${recipe.image.credit}</a> · <a href="${recipe.image.licenseUrl}" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></figcaption></figure>` : ""}
       <div class="recipe-copy">
         <p class="recipe-number">${String(index + 1).padStart(2, "0")} · ${recipe.serves}</p>
         <h3>${recipe.title}</h3>

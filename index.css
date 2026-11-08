@@ -124,3 +124,6 @@ footer { min-height: 88px; color: #797a6d; font-size: 11px; } footer .wordmark {
   .recipe-copy { padding: 23px 21px; }
   .recipe-detail-grid { grid-template-columns: 1fr; gap: 12px; }
 }
+.recipe-photo figcaption { padding: 8px 11px; color: #717164; font-size: 10px; line-height: 1.4; }
+.recipe-photo figcaption a { text-decoration: underline; text-decoration-color: #c6c2ad; text-underline-offset: 2px; }
+.recipe-photo figcaption a:hover { color: var(--olive); }
