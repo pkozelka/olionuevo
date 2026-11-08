@@ -93,7 +93,16 @@ const content = {
       oilNote: "Olej je v zálivce i v chlebu. S octem začni opatrně, aby nepřekryl rajčata."
     },
     {
-      id: "aglio-olio", title: "Spaghetti aglio, olio e peperoncino", subtitle: "Špagety s česnekem a chilli", serves: "2 porce", image: null,
+      id: "aglio-olio", title: "Spaghetti aglio, olio e peperoncino", subtitle: "Špagety s česnekem a chilli", serves: "2 porce",
+      image: {
+        src: "assets/recipes/spaghetti-5512066970.jpg",
+        alt: "Špagety s česnekem, olivovým olejem, sušenými rajčaty a bylinkami.",
+        title: "Spaghetti aglio, olio e pomodoro seco — Lablascovegmenu / Flickr (CC BY 2.0)",
+        credit: "Spaghetti aglio, olio e pomodoro seco — Lablascovegmenu",
+        authorUrl: "https://www.flickr.com/photos/lablasco/",
+        photoUrl: "https://www.flickr.com/photos/lablasco/5512066970/",
+        licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+      },
       description: "Rychlé těstoviny s jednoduchou omáčkou z oleje. Česnek nech jen lehce zezlátnout.",
       ingredients: ["200 g špaget", "3 stroužky česneku", "1 sušená chilli paprička nebo špetka chilli vloček", "5 lžic extra panenského olivového oleje", "Hrst nasekané petrželky, podle chuti", "Sůl"],
       steps: ["Špagety uvař v osolené vodě. Před slitím odlož hrnek vody z vaření.", "Česnek nakrájej na plátky a s chilli pomalu zahřívej v oleji. Jakmile zavoní a začne lehce zlátnout, stáhni pánev z ohně.", "Přidej špagety a několik lžic vody z vaření. Promíchej, aby vznikla lehká omáčka; podle potřeby přilij další vodu.", "Vmíchej petrželku a podávej. Na závěr můžeš přidat ještě trochu čerstvého oleje."],
