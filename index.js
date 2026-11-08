@@ -24,7 +24,7 @@ const content = {
     {
       id: "fettunta", title: "Fettunta", subtitle: "Toskánský chléb s olejem", serves: "4 krajíce",
       image: {
-        src: "https://live.staticflickr.com/5207/5216927761_0ea4beb1fb_b.jpg",
+        src: "assets/recipes/fettunta-5216927761.jpg",
         alt: "Plátky toskánského chleba s česnekem a čerstvým olivovým olejem.",
         title: "Fettunta with new olive oil extra virgin — Gabriele Cantini / Flickr (CC BY 2.0)",
         credit: "Fettunta with new olive oil extra virgin — Gabriele Cantini",
@@ -44,7 +44,15 @@ const content = {
       oilNote: "Přidej ho syrový až nakonec. Rajčatová šťáva a olej se na talíři spojí v tu nejlepší zálivku."
     },
     {
-      id: "pappa-al-pomodoro", title: "Pappa al pomodoro", subtitle: "Hustá rajčatová polévka s chlebem", serves: "4 porce", image: null,
+      id: "pappa-al-pomodoro", title: "Pappa al pomodoro", subtitle: "Hustá rajčatová polévka s chlebem", serves: "4 porce",
+      image: {
+        src: "assets/recipes/pappa-al-pomodoro-2830796123.jpg",
+        alt: "Pappa al pomodoro, hustá toskánská rajčatová polévka s chlebem.",
+        title: "pappa al pomodoro — fugzu / Flickr (CC BY 2.0)",
+        credit: "pappa al pomodoro — fugzu",
+        photoUrl: "https://www.flickr.com/photos/70253321@N00/2830796123/",
+        licenseUrl: "https://creativecommons.org/licenses/by/2.0/"
+      },
       description: "Toskánská polévka, která promění zralá rajčata a starší chléb v syté jídlo.",
       ingredients: ["700 g zralých nebo konzervovaných rajčat", "250 g den starého bílého chleba", "1 menší cibule", "2 stroužky česneku", "700 ml zeleninového vývaru nebo vody", "Bazalka, sůl a pepř", "3 lžíce olivového oleje na vaření a další na dokončení"],
       steps: ["Cibuli nakrájej najemno a na dvou lžících oleje pomalu zahřívej, dokud nezměkne. Přidej nasekaný česnek.", "Přidej rajčata, osol a vař asi 10 minut.", "Přilij vývar a přidej natrhaný chléb. Vař dalších 15–20 minut a občas promíchej.", "Vmíchej bazalku, dochuť a nech chvíli odpočinout. Podávej s čerstvým olejem na každé porci."],
